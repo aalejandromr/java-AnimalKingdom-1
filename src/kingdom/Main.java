@@ -79,6 +79,10 @@ public class Main
     System.out.println();
     System.out.println("List only those animals that lay eggs and breath with lungs");
     printAnimals(animalList, o1 -> (o1.breath() == "lungs") && (o1.reproduce() == "eggs"));
+
+    System.out.println();
+    System.out.println("List alphabetically only those animals that were named in 1758");
+    printAnimals(animalList, o1 -> (o1.breath() == "lungs") && (o1.reproduce() == "eggs"));
     // printAnimals(animalList, (o1) -> o1.getYear() > o2.getYear());
   }
 }
